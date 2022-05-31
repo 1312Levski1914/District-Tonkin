@@ -111,16 +111,15 @@ section h1{
 .welcome img{
     width: 100%;
 }
-.welcome h4{
+.h4Welcome{
     text-align: center;
     font-family: 'Imbue';
     padding: 10px;
     position: relative;
     bottom: 30px;
-    
     font-size: 20px;
 }
-.welcome h4 span{
+.h4Welcome span{
     text-transform: uppercase;
 }
 .welcome p{
@@ -338,7 +337,8 @@ footer img{
 }
 @media screen and (min-width: 600px)  {
     header{
-        width: 98vw;
+        width: 100vw;
+        max-width: fit-content;
         height: 768px;
         position: relative;
     }
@@ -406,21 +406,24 @@ footer img{
         width: 100%;
         padding: 35px;
         position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+
     }
     .welcome img{
         width: 505px;
         margin-left: 8%;
     }
-    .welcome h4{
+    .h4Welcome{
         margin: 20px;
+        margin-top: 100px;
         bottom: 20px;
         font-size: 60px;
+        padding-top: 100px;
     }
     .welcome p{
         width: 30%;
-        position: absolute;
-        right: 10%;
-        top: 32%;
         padding-top: 40px;
         text-align: center;
         font-size: 18px;
