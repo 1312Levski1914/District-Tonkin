@@ -10,15 +10,29 @@
     <meta name="keywords" content="KØGE Koge Visit-koge map travel">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Imbue' rel='stylesheet'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+        
+
+        <div class="popUpBackground">
+            <h1>Are you a group of <br> 8 people or more?</h1>
+            <div class="stroke"></div>
+            <button onclick="moreThen8()" class="middle-btn">Yes</button>
+            <button onclick="lessThen8()" class="middle-btn">No</button>
+        </div>
+    
     <header>
         <nav id="navbar">
             <a class="nav-btn" href="menus.html">Menu</a>
             <img onclick="refreshPage()" src="./img/logo-white.png" alt="header Logo Missing">
-            <a class="nav-btn" href="">Book a table</a>
+            <div onclick='popUp()' class="nav-btn" >Book a table</div>
         </nav>
+        
         <video autoplay loop id="myVideo">
             <source src="./img/video-facebook.mp4" type="video/mp4">
         </video>
@@ -34,6 +48,7 @@
             </div>
         </section>
     </header>
+    
     <div class= 'welcome'>
         <h4>Welcome to <br> <span> District Tonkin </span></h4>
         <img src="./img/district-tonkin-nickie.jpeg" alt="first image Missing">
@@ -42,20 +57,28 @@
         </p>
         <img id="ilustration2" src="./img/illustration-2.png" alt="ilustratiton 1">
     </div>
+    <h4 class="h2TagDishes">Most popular dishes</h4>
     <section class="Dishes">
-        <h4>Most popular dishes</h4>
-        <img src="./img/bahn-mi.jpeg" alt="sandwich Missing">
-        <h6>Bahn mi</h6>
-        <p>Crispy, warm Vietnamese sandwiches.
-            All served with District Tonkin's homemade sauces, pepper mayo, cucumber, leeks, coriander and chili. </p>
-        <img src="./img/nuddles-salad.jpeg" alt="nuddles salad missing">
-        <h6>Nuddles salads</h6>
-        <p>Warm rice noodles topped with fried shallots, bean sprouts, pickles, cucumber, leeks, coriander, peanuts and chili.</p>
-        <img src="./img/photo-facebook-food.jpeg" alt="chair missing">
-        <h6>Pho</h6>
-        <p>Vietnam's national dish on beaf served with slices of rare flank steak, topped with TONKIN's fresh herb mix, lime and chili. </p>
+        <div>
+            <img src="./img/bahn-mi.jpeg" alt="sandwich Missing">
+            <h6>Bahn mi</h6>
+            <p>Crispy, warm Vietnamese sandwiches.
+                All served with District Tonkin's homemade sauces, pepper mayo, cucumber, leeks, coriander and chili. </p>
+        </div>
+        <div>
+            <img src="./img/nuddles-salad.jpeg" alt="nuddles salad missing">
+            <h6>Nuddles salads</h6>
+            <p>Warm rice noodles topped with fried shallots, bean sprouts, pickles, cucumber, leeks, coriander, peanuts and chili.</p>
+        </div>
+        <div>
+            <img src="./img/photo-facebook-food.jpeg" alt="chair missing">
+            <h6>Pho</h6>
+            <p>Vietnam's national dish on beaf served with slices of rare flank steak, topped with TONKIN's fresh herb mix, lime and chili. </p>
+        </div>
     </section>
+    <button class="middle-btn">See more</button>
     <section id="location">
+        <img class= 'womanWithBike'src="./img/illustration-3.png" alt="ilustration 3 missing">
         <h3>Location</h3>
         <h5 onclick="showMore()">Store Kongensgade 71</h5>
         <div class="locationInfo">
@@ -100,13 +123,32 @@
             <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d140.60193901289563!2d12.596449500669195!3d55.67801617679489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe375d8e889b12acb!2sNoodles%20%26%20Dumplings!5e0!3m2!1sen!2sdk!4v1653947282175!5m2!1sen!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <h3>
+    <h3 class = 'alertForBooking'>
         *Note that we don't do table reservations for parties of less than 8 people.
         Drop by and we will find a table for you!
     </h3>
 
     <footer>
-
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>Sunday - Thursday <br>11:30am - 8pm</p>
+            <p>Friday - Saturday <br>11:30am - 9pm</p>
+            <p>+45 53 89 86 98</p>
+            <p>info@district-tonkin.com</p>
+        </div>
+        <div class="socialMedia">
+            <h3>Social media</h3>
+            <p>Follow us on</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+        <div class="delivery">
+            <h3>Delivery</h3>
+            <i class="wolt"></i>
+            <p>Order take-away</p>
+        </div>
+        <p class="copyright">Copyrights 2022</p>
+        <img src="./img/illusttration-4.png" alt="footer ilustration missing">
     </footer>
 
     <script src="app.js"></script>
