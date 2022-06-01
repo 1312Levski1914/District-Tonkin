@@ -12,25 +12,60 @@ function myFunction(){
     }
 }
 //This is the popUp Box when user try to Book a Table;
-let container = document.getElementsByClassName('popUpBackground')[0];
-let btn = Array.from(document.getElementsByClassName('middle-btn'));
-let heading = container.childNodes[1];
+let body = document.getElementsByTagName('body')[0]
+let divContainer = document.createElement('div');
+let stop = true;        
+let stroke = document.createElement('div').classList.add('stroke');
+let btnContainer = document.createElement('div');
+divContainer.classList.add('popUpBackground');
+btnContainer.innerHTML = `
+<h1>Are you a group of <br> 8 people or more?</h1>
+<div class="stroke"></div>
+<div id= "answerYes" onclick="moreThen8()" class="middle-btn inForm">Yes</div>
+<div id= "no" onclick="lessThen8()" class="middle-btn inForm">No</div>
+`;
+
+divContainer.appendChild(btnContainer)
+let noAnswer  = document.createElement('h1');
+let joker = document.createElement('div')
+let joker1 = 3 ;
 function popUp(){
-    btn.forEach(x => x.style.display = 'block');
-    if(container.style.display != 'block'){
-        container.style.display = 'block';
+    if(joker1 > 3 && stop == true){
+        joker1 = 3;
+        divContainer.removeChild(form);
+        divContainer.removeChild(joker)
+        divContainer.appendChild(btnContainer)
+        body.removeChild(divContainer)
+        stop = true;
+    }else if(stop){
+        if(divContainer.childElementCount >1){
+            divContainer.removeChild(noAnswer);
+            divContainer.removeChild(joker);
+            divContainer.appendChild(btnContainer);
+            body.removeChild(divContainer)
+            stop= true
+        }else{
+            body.appendChild(divContainer)
+            stop = false;
+        }
     }else{
-        container.style.display = 'none';
+        body.removeChild(divContainer);
+        stop = true;
     }
 }
 function lessThen8(){
-    heading.innerHTML = 'Drop by and we will <br> find a table for you';
-    btn.forEach(x => x.style.display = 'none');
+    divContainer.removeChild(btnContainer);
+    noAnswer.innerHTML = 'Drop by and we will <br> find a table for you';
+    noAnswer.classList.add('headingBookATable');
+    divContainer.appendChild(noAnswer)
+    stop= true;
+    divContainer.appendChild(joker);
 }
-let form = document.getElementById('myForm');
-
+let form = document.createElement('div');
 function moreThen8(){
-    container.innerHTML = `
+    divContainer.removeChild(btnContainer);
+    joker1 = 5;
+    form.innerHTML = `
                     <form class = 'myForm'>
                          <input type="text" name="firstName" id="formName" placeholder="Name">
                          <input type="number" placeholder="Phone number">
@@ -48,7 +83,11 @@ function moreThen8(){
                          </div>
                          <input type="textarea" placeholder = 'Comments' name="comment" id="comment">
                          <button class="middle-btn">Send</button>
-                     </form>`    
+                     </form>` 
+                     
+    divContainer.appendChild(joker);
+    divContainer.appendChild(form);
+    stop= true;
 }
 
 //Now I decide to put all the tags and text from HTML here in Javascript ;

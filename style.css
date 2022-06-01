@@ -4,6 +4,7 @@
     padding: 0;
   
 }
+
 :root {
     --nav: #fff;
     --btn-color: #000000;
@@ -92,7 +93,7 @@ section h1{
     padding: 10px;
     gap: 10px;
 }
-.telNumber i{
+.telNumber img{
     width: 13px;
     height: 12px;
     background-color: #fff;
@@ -159,7 +160,15 @@ section h1{
     font-weight: 700;
     font-size: 12px;
     box-shadow: 1px 1px 10px 2px gray;
-    margin-bottom: 70px;
+    margin: auto;
+}
+.inForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: center;
+    height: auto;
+    padding: 5px 10px ;
 }
 #location{
     position: relative;
@@ -247,14 +256,14 @@ footer img{
 }
 .popUpBackground{
     width: 80%;
-    height: auto;
+    min-height: 300px;
     position: absolute;
     top: 6%;
     left: 10%;
     background-color: var(--nav);
-    display: none;
     z-index: 70;
 }
+
 .stroke{
     width: 80%;
     height: 100%;
@@ -467,11 +476,10 @@ footer img{
     .popUpBackground{
         width: 80%;
         height: auto;
-        position: absolute;
-        top: 6%;
+        position: relative;
+        top: 20%;
         left: 10%;
         background-color: var(--nav);
-        display: none;
         z-index: 70;
     }
     .stroke{
@@ -492,6 +500,12 @@ footer img{
         text-align: center;
         font-family: 'Poppins';
         font-size: 25px;
+    }
+    .headingBookATable{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
     }
     .myForm{
         display: flex;
