@@ -4,13 +4,14 @@
     padding: 0;
   
 }
-body,html{
-   
-}
 :root {
     --nav: #fff;
-    --btn-color: #3d433f;
+    --btn-color: #000000;
     --imBue: 'Imbue', serif;
+    --Poppings: 'Poppins';
+    --fontSizeMobNav: '12px';
+    --fontSizeHedingMob1: '20px';
+    --fontSizeHeadingMob2: '14px';
     }
 header{
     width: 100vw;
@@ -31,10 +32,9 @@ nav img{
 .nav-btn{
     text-align: center;
     text-decoration: none;
-    display: block;
     color: var(--nav);
-    font-size: 16px;
-    font-family: 'Imbue';
+    font-size: var(--fontSizeMobNav);
+    font-family: var(--imBue);
     width: 20%;
 }
 .sticky{
@@ -54,55 +54,50 @@ header section{
     left: 49%;
     margin-top: -50%;
     margin-left: -100px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-family: var(--Poppings);
+    text-transform: uppercase;
+    text-align: center;
 }
 section h1{
-    font-family: 'Imbue';
+    font-family: var(--imBue);
     font-size:22px;
-    width: 146px;
-    margin: auto;
     position: relative;
-    top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-
+    top: 5px;
 }
 .littleText{
-    font-family: 'Poppins';
     font-size: 8px;
-    width: 146px;
-    text-align: center;
-    position: relative;
-    top: 15px;
-    
 }
 .orderSpan{
-    font-family: 'Poppins';
     font-size: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    top: 38px;
+    font-weight:600;
 }
 .telNumber{
     width: 146px;
     height: 22px;
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 700;
     position: relative;
-    bottom: -42px;
-    margin: auto;
-    background-color: #000000;
+    background-color: var(--btn-color);
     color: var(--nav);
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 }
 .telNumber i{
-    width: 30px;
-    height: 20px;
+    width: 13px;
+    height: 12px;
+    background-color: #fff;
 }
-.telNumber p{
-    position: absolute;
-    right: 3%;
-    bottom: 3%;
-}
+
 .welcome{
     width: 100%;
     padding: 35px;
@@ -113,89 +108,79 @@ section h1{
 }
 .h4Welcome{
     text-align: center;
-    font-family: 'Imbue';
-    padding: 10px;
-    position: relative;
-    bottom: 30px;
-    font-size: 20px;
-    margin-top: 40px;
+    font-family: var(--imBue);
+    font-size: var(--fontSizeHedingMob1);
+    margin-top: 30px;
 }
 .h4Welcome span{
     text-transform: uppercase;
-}
-.welcome p{
-    padding-top: 20px;
-    text-align: center;
-
 }
 #ilustration2{
     width: 200px;
     position: absolute;
     opacity: 0.4;
-    top: 3%;
+    top: -7%;
     right: 0%;
     z-index: -69;
 }
+.welcome p{
+    text-align: center;
+    padding: 50px 15px;
+    font-family: var(--fontSizeMobNav);
+}
 .h2TagDishes{
-    font-family: 'Imbue';
+    font-family: var(--imBue);
     font-size: 20px;
     text-align: center;
     padding: 10px;
 }
-.Dishes img{
+.dishes{
+    text-align: center;
+    font-family: var(--Poppings);
+}
+.dishes img{
     width: 80%;
     position: relative;
-    left: 10%;
 }
-.Dishes h6{
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Poppins';
+.dishes h6{
+    font-size: var(--fontSizeHeadingMob2);
 }
-.Dishes p{
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding:5px 40px 10px 40px;
+.dishes p{
+    padding: 5px 50px 30px 50px;
 }
 .middle-btn{
     width:100px ;
     height: 28px;
     border-style: none;
     border-radius: 4px;
-    background-color: #000000;
+    background-color: var(--btn-color);
     color: var(--nav);
-    text-align: center;
+    font-family: var(--imBue);
+    font-weight: 700;
+    font-size: 12px;
     box-shadow: 1px 1px 10px 2px gray;
-    padding: 2px 7px 2px 7px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 #location{
     position: relative;
+    text-align: center;
 }
 #location h5{
-    text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     cursor: pointer;
+    font-size: 12px;
     text-decoration: underline;
 }
 #location h3{
-    text-align: center;
     padding: 20px;
     font-size: 20px;
+    padding-bottom: 25px;
 }
 .womanWithBike{
     position: absolute;
-    top: -48%;
+    top: 0%;
     left: 0%;
-    width: 400px;
+    width: 500px;
     z-index: -69;
     opacity: 0.4;
 }
@@ -211,25 +196,6 @@ section h1{
 #location img{
     margin: auto;
     width: 100%;
-}
-.locationInfo1{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: none;
-}
-
-.locationInfo2{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: none;
-}
-.locationInfo3{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: none;
 }
 
 .paragrafForLocation{
@@ -256,28 +222,14 @@ footer{
     font-size: 12px;
     padding: 55px 20px 20px 35px;
     position: relative;
-    
 }
-.contact{
+.childFooter{
     color:var(--nav);
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-bottom: 35px;
-}
-.socialMedia{
-    color: var(--nav);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-}
-.delivery{
-    color: var(--nav);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
+    z-index: 69;
 }
 .copyright{
     position: absolute;
@@ -292,9 +244,7 @@ footer img{
     right: 2%;
     opacity: 0.4;
     z-index: 0;
-
 }
-
 .popUpBackground{
     width: 80%;
     height: auto;
@@ -375,36 +325,27 @@ footer img{
         font-size:70px;
         text-align: center;
         width: 70%;
-        top: 30px;
         line-height: 0.8;
     }
     .littleText{
         font-size: 12px;
-        top: -20px;
-        text-transform: uppercase;
     }
     .littleText p{
         position: relative;
-        top: 20px;
+        top: -50px;
     }
     .orderSpan{
         font-size: 16px;
+        position: relative;
+        bottom: 20px;
     }
     .telNumber{
         width: 186px;
         height: 36px;
-        position: relative;
-        bottom: -15%;
     }
     .telNumber i{
         width: 30px;
         height: 20px;
-    }
-    .telNumber p{
-        position: absolute;
-        right: 3%;
-        bottom: 50%;
-        margin-bottom:-5%;
     }
     .welcome{
         width: 100%;
@@ -413,7 +354,6 @@ footer img{
         display: flex;
         flex-direction: row;
         gap: 10%;
-
     }
     .welcome img{
         width: 505px;
@@ -442,92 +382,55 @@ footer img{
         right: 0%;
         z-index: -69;
     }
-    .Dishes{
-        display: flex;
-
-    }
     .h2TagDishes{
         font-size: 40px;
         padding: 20px;
     }
-    .Dishes div{
+    .dishes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 5% 10%;
+    }
+    .dishes div{
         display: flex;
         flex-direction: column;
     }
-    .Dishes div h6{
+    .dishes div h6{
         text-align: start;
-        padding-left: 10%;
         margin-top: 10%;
         font-size: 24px;
     }
-    .Dishes div p{
+    .dishes div p{
         text-align: start;
-        padding-left: 10%;
         margin-top: 3%;
         font-size: 16px;
         line-height: 1.5;
-    }
-    .middle-btn{
-        width:100px ;
-        height: 28px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        padding: 0 20% 0 0;
     }
     #location h3{
         font-size: 40px;
     }
-    .womanWithBike{
-        position: absolute;
-        bottom: 0;
-        left: 0%;
-        height: 700px;
-        z-index: -69;
-        opacity: 0.4s;
-    }
     .locationInfo{
-        display: flex;
-        flex-direction: row;
         padding: 20px;
-        display: none;
-        position: relative;
         width: 85%;
-        margin: auto;
     }
     #location img{
         margin: auto;
         width:35%;
         max-height: 454px;
     }
-    .locationInfo1{
-        display: flex;
-        flex-direction: column;
+    .paragrafForLocation{
+        text-align: center;
+        width: 80%;
+        margin: auto;
         padding: 20px;
-        display: none;
     }
-
-.locationInfo2{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: none;
-}
-.locationInfo3{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    display: none;
-}
-
-.paragrafForLocation{
-    padding-bottom: 20px;
-    text-align: center;
-    padding: 20px;
-}
-.googleMaps{
-    width: 65%;
-    margin: auto;
-    padding-left: 5%;
-}
+    .googleMaps{
+        width: 65%;
+        margin: auto;
+        padding-left: 5%;
+    }
     footer{
         display: flex;
         flex-direction: row;
@@ -561,49 +464,48 @@ footer img{
         right: 22%;
         opacity: 0.3;
     }
-
-.popUpBackground{
-    width: 80%;
-    height: auto;
-    position: absolute;
-    top: 6%;
-    left: 10%;
-    background-color: var(--nav);
-    display: none;
-    z-index: 70;
-}
-.stroke{
-    width: 80%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-image: url(./img/Artboard\ 43.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    z-index: -69;
-}
-.popUpBackground h1{
-    margin: 40px;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 25px;
-}
-.myForm{
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
-    gap: 30px;
-}
-.myForm input{
-    border-style: none;
-    border-bottom: 3px solid #707070;
-}
-.myForm div{
-    display: flex;
-    justify-content: space-between;
-}
+    .popUpBackground{
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 6%;
+        left: 10%;
+        background-color: var(--nav);
+        display: none;
+        z-index: 70;
+    }
+    .stroke{
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-image: url(./img/Artboard\ 43.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        z-index: -69;
+    }
+    .popUpBackground h1{
+        margin: 40px;
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 25px;
+    }
+    .myForm{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        gap: 30px;
+    }
+    .myForm input{
+        border-style: none;
+        border-bottom: 3px solid #707070;
+    }
+    .myForm div{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
