@@ -476,7 +476,7 @@ footer img{
     .popUpBackground{
         width: 80%;
         height: auto;
-        position: relative;
+        position: fixed;
         top: 20%;
         left: 10%;
         background-color: var(--nav);
@@ -496,21 +496,24 @@ footer img{
         z-index: -69;
     }
     .popUpBackground h1{
-        margin: 40px;
-        text-align: center;
         font-family: 'Poppins';
         font-size: 25px;
+        display: flex;
+        justify-content: center;
     }
     .headingBookATable{
-        width: 80%;
-        height: auto;
-        margin: auto;
-        margin-top: 20px;
+        min-height: 150px;
+        font-family: 'Poppins';
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
     }
     .myForm{
+        width: 60%;
         display: flex;
         flex-direction: column;
-        margin: 40px;
+        margin: auto;
+        padding: 50px 0 50px 0;
         gap: 30px;
     }
     .myForm input{
