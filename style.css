@@ -297,6 +297,43 @@ footer img{
     display: flex;
     justify-content: space-between;
 }
+.underline{
+    text-decoration: underline;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.dishesContainer{
+    width: 100%;
+    text-align: center;
+    padding-top: 10% ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dishesContainer h1{
+    width: 100%;
+}
+.dishContainer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 3%;
+    margin: 10px 70px 10px 70px;
+    
+}
+.pTagMenu{
+    color: #3B3737;
+    font-size: 10px;
+    font-family: var(--Poppings);
+}
+.type{
+    font-family: var(--imBue);
+    color: #B4D5CD;
+    font-size: 10px;
+    text-transform: uppercase;
+}
 @media screen and (min-width: 600px)  {
     header{
         width: 100vw;
@@ -523,6 +560,47 @@ footer img{
     .myForm div{
         display: flex;
         justify-content: space-between;
+    }
+
+    .underline{
+        text-decoration: underline;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .dishesContainer{
+        width: 80%;
+        text-align: center;
+        padding-top: 10% ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .dishesContainer h1{
+        width: 100%;
+    }
+    .dishContainer{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 3%;
+        width: 30%;
+        margin: 10px 70px 10px 70px;
+        
+    }
+    .pTagMenu{
+        color: #3B3737;
+        font-size: 10px;
+        font-family: var(--Poppings);
+    }
+    .type{
+        font-family: var(--imBue);
+        color: #B4D5CD;
+        font-size: 10px;
+        text-transform: uppercase;
     }
 }
 
