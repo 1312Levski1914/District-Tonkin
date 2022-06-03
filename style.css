@@ -39,7 +39,7 @@ nav img{
     width: 20%;
 }
 .sticky{
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -60,7 +60,7 @@ header section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 13px;
+    gap: 5px;
     font-family: var(--Poppings);
     text-transform: uppercase;
     text-align: center;
@@ -68,8 +68,7 @@ header section{
 section h1{
     font-family: var(--imBue);
     font-size:22px;
-    position: relative;
-    top: 5px;
+    
 }
 .littleText{
     font-size: 8px;
@@ -81,7 +80,7 @@ section h1{
 .telNumber{
     width: 146px;
     height: 22px;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 700;
     position: relative;
     background-color: var(--btn-color);
@@ -92,11 +91,12 @@ section h1{
     align-items: center;
     padding: 10px;
     gap: 10px;
+    border-radius: 3px;
 }
 .telNumber img{
     width: 13px;
     height: 12px;
-    background-color: #fff;
+   
 }
 
 .welcome{
@@ -106,6 +106,7 @@ section h1{
 }
 .welcome img{
     width: 100%;
+    height: max-content
 }
 .h4Welcome{
     text-align: center;
@@ -119,7 +120,7 @@ section h1{
 #ilustration2{
     width: 200px;
     position: absolute;
-    opacity: 0.4;
+    opacity: 0.2;
     top: -7%;
     right: 0%;
     z-index: -69;
@@ -127,7 +128,8 @@ section h1{
 .welcome p{
     text-align: center;
     padding: 50px 15px;
-    font-family: var(--fontSizeMobNav);
+    font-family: var(--Poppings);
+    color: #3B3737;
 }
 .h2TagDishes{
     font-family: var(--imBue);
@@ -148,19 +150,26 @@ section h1{
 }
 .dishes p{
     padding: 5px 50px 30px 50px;
+    color: #3B3737;
 }
 .middle-btn{
-    width:100px ;
+    width:200px ;
     height: 28px;
     border-style: none;
     border-radius: 4px;
     background-color: var(--btn-color);
     color: var(--nav);
-    font-family: var(--imBue);
+    font-family: var(--Poppings);
     font-weight: 700;
     font-size: 12px;
-    box-shadow: 1px 1px 10px 2px gray;
+    box-shadow: 1px 1px 5px 1px gray;
     margin: auto;
+    padding: 5px 10px ;
+    text-decoration: none;
+}
+.middle-btn:hover{
+    background-color: #7BA7D2;
+    cursor: pointer;
 }
 .inForm{
     display: flex;
@@ -177,13 +186,16 @@ section h1{
 #location h5{
     padding-bottom: 20px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 16px;
+    font-family: var(--Poppings);
+    font-weight: 800;
     text-decoration: underline;
 }
 #location h3{
     padding: 20px;
     font-size: 20px;
     padding-bottom: 25px;
+    padding-top: 80px ;
 }
 .womanWithBike{
     position: absolute;
@@ -211,16 +223,15 @@ section h1{
     padding-bottom: 20px;
     text-align: center;
     padding: 20px;
+    font-family: var(--Poppings);
 }
 .googleMaps{
     width: 95%;
     margin: auto;
 }
-.alertForBooking{
-    margin: 30px;
-    text-align: center;
-}
+
 footer{
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -228,6 +239,7 @@ footer{
     gap: 15px;
     background-color: #3B3737;
     padding: 20px;
+    background-color: #7BA7D2;
     font-family: 'Poppins';
     font-size: 12px;
     padding: 55px 20px 20px 35px;
@@ -245,7 +257,12 @@ footer{
 .copyright{
     position: absolute;
     bottom: 2%;
-    left:40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    text-align: center;
+    width: 200px;
+    margin: auto;
     color: var(--nav);
 }
 footer img{
@@ -264,6 +281,7 @@ footer img{
     left: 10%;
     background-color: var(--nav);
     z-index: 70;
+    font-family: var(--Poppings);
 }
 
 .stroke{
@@ -357,7 +375,7 @@ footer img{
         cursor: pointer;
     }
     header section{
-        width: 458px;
+        width: 600px;
         height: 324px;
         position: absolute;
         top: 24%;
@@ -370,22 +388,21 @@ footer img{
         max-width: 100%;
     }
     section h1{
-        font-size:70px;
+        font-size:50px;
         text-align: center;
-        width: 70%;
+        width: 100%;
         line-height: 0.8;
+        
     }
     .littleText{
         font-size: 12px;
     }
     .littleText p{
-        position: relative;
-        top: -50px;
+        
     }
     .orderSpan{
         font-size: 16px;
-        position: relative;
-        bottom: 20px;
+        
     }
     .telNumber{
         width: 186px;
@@ -394,6 +411,10 @@ footer img{
     .telNumber i{
         width: 30px;
         height: 20px;
+    }
+    .telNumber:hover{
+        background-color: #7BA7D2 ;
+        cursor: pointer;
     }
     .welcome{
         width: 100%;
@@ -415,8 +436,8 @@ footer img{
         padding-top: 100px;
     }
     .welcome p{
-        width: 30%;
-        padding-top: 40px;
+        width: 55%;
+        padding-top:0px ;
         text-align: center;
         font-size: 18px;
     
@@ -425,7 +446,7 @@ footer img{
         width: 601px;
         height: 1102px;
         position: absolute;
-        opacity: 0.4;
+        opacity: 0.2;
         top: 3%;
         right: 0%;
         z-index: -69;
@@ -438,7 +459,13 @@ footer img{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 5% 10%;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    .dishes img{
+        width: 300px;
+        max-width: 300px;
+        height: 300px;
     }
     .dishes div{
         display: flex;
@@ -451,10 +478,12 @@ footer img{
     }
     .dishes div p{
         text-align: start;
+        width: 300px;
         margin-top: 3%;
         font-size: 16px;
         line-height: 1.5;
-        padding: 0 20% 0 0;
+        padding: 0;
+        
     }
     #location h3{
         font-size: 40px;
@@ -462,6 +491,15 @@ footer img{
     .locationInfo{
         padding: 20px;
         width: 85%;
+    }
+    #location h5{
+        text-decoration: none;
+        width: fit-content;
+        margin: auto;
+
+    }
+    #location h5:hover{
+        text-decoration: underline;
     }
     #location img{
         margin: auto;
@@ -483,11 +521,13 @@ footer img{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 25%;
+        gap: 15%;
+        justify-content: space-between;
         font-size: 20px;
         padding: 55px 75px 55px 75px;
         position: relative;
         text-align: start;
+
     }
     .contact{
         font-size: 16px;
@@ -498,13 +538,7 @@ footer img{
     .delivery{
         font-size: 16px;
     }
-    .copyright{
-        position: absolute;
-        bottom: 2%;
-        left:40%;
-        color: var(--nav);
-        font-size: 12px;
-    }
+
     footer img{
         position: absolute;
         width: 300px;
@@ -513,12 +547,17 @@ footer img{
         opacity: 0.3;
     }
     .popUpBackground{
-        width: 80%;
+        width: 25%;
         height: auto;
-        position: fixed;
-        top: 20%;
-        left: 10%;
+        position: absolute;
+        top: 40%;
+        left: 75%;
+        border-width: 2px;
+        bottom: 0%;
+        right: 0%;
         background-color: var(--nav);
+        border-style:solid;
+        border-width: 1px; 
         z-index: 70;
     }
     .stroke{
@@ -540,13 +579,7 @@ footer img{
         display: flex;
         justify-content: center;
     }
-    .headingBookATable{
-        min-height: 150px;
-        font-family: 'Poppins';
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-    }
+    
     .myForm{
         width: 60%;
         display: flex;
@@ -564,11 +597,7 @@ footer img{
         justify-content: space-between;
     }
 
-    .underline{
-        text-decoration: underline;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
+   
     .dishesContainer{
         width: 80%;
         text-align: center;
@@ -579,10 +608,12 @@ footer img{
         gap: 10px;
         justify-content: center;
         margin: auto;
+        
     }
     
     .dishesContainer h1{
         width: 100%;
+        color: #7BA7D2;
     }
     .dishContainer{
         display: flex;
@@ -595,13 +626,13 @@ footer img{
     }
     .pTagMenu{
         color: #3B3737;
-        font-size: 10px;
+        font-size: 15px;
         font-family: var(--Poppings);
     }
     .type{
         font-family: var(--imBue);
         color: #B4D5CD;
-        font-size: 10px;
+        font-size: 20px;
         text-transform: uppercase;
     }
 }
