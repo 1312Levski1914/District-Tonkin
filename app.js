@@ -1,30 +1,20 @@
 
-//This function will make navigation bar stay on top always ;
-window.onload = function(){myFunction()}// on load do function that will make navbar go on top in the begging;
-let navbar = document.getElementById('navbar'); 
-let sticky = navbar.offsetTop;
-function myFunction(){
-    if(window.pageYOffset >= sticky){
-        navbar.classList.add('sticky');
-    }else{
-        navbar.classList.remove('sticky');
-    }
-}
 //This is the popUp Box when user try to Book a Table;
 let body = document.getElementsByTagName('body')[0]
 let divContainer = document.createElement('div');
 let stop = true;        
 let stroke = document.createElement('div').classList.add('stroke');
 let btnContainer = document.createElement('div');
-divContainer.classList.add('popUpBackground');
-btnContainer.innerHTML = `
-<h1>Are you a group of <br> 8 people or more?</h1>
-<div class="stroke"></div>
-<div id= "answerYes" onclick="moreThen8()" class="middle-btn inForm">Yes</div>
-<div id= "no" onclick="lessThen8()" class="middle-btn inForm">No</div>
-`;
+    divContainer.classList.add('popUpBackground');
+    btnContainer.innerHTML = `
+                            <h1>Are you a group of <br> 8 people or more?</h1>
+                            <div class="stroke"></div>
+                            <img onclick= 'popUp()' class='xMark' src="./img/xmark-solid.svg" alt="xmark-missing" width ='30px'>
+                            <div id= "answerYes" onclick="moreThen8()" class="middle-btn inForm">Yes</div>
+                            <div id= "no" onclick="lessThen8()" class="middle-btn inForm">No</div>
+                        `;
 
-divContainer.appendChild(btnContainer)
+    divContainer.appendChild(btnContainer)
 let noAnswer  = document.createElement('h1');
 let joker = document.createElement('div')
 let joker1 = 3 ;
@@ -52,9 +42,11 @@ function popUp(){
         stop = true;
     }
 }
+let xMark = document.getElementsByClassName('xMark');
 function lessThen8(){
     divContainer.removeChild(btnContainer);
-    noAnswer.innerHTML = 'Drop by and we will <br> find a table for you!';
+    noAnswer.innerHTML = `Drop by and we will <br> find a table for you!
+                            <img onclick= 'popUp()' class='xMark' src="./img/xmark-solid.svg" alt="xmark-missing" width ='30px'>`;
     noAnswer.classList.add('headingBookATable');
     divContainer.appendChild(noAnswer)
     stop= true;
@@ -83,7 +75,9 @@ function moreThen8(){
                          <input type="textarea" placeholder = 'Comments' name="comment" id="comment">
                          <button class="middle-btn form-btn">Send</button>
                      </form>
-                     <div class="stroke"></div>` 
+                     <div class="stroke"></div>
+                     <img onclick= 'popUp()' class='xMark' src="./img/xmark-solid.svg" alt="xmark-missing" width ='30px'>` 
+                     
                      
     divContainer.appendChild(joker);
     divContainer.appendChild(form);
