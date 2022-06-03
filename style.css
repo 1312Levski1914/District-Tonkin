@@ -551,9 +551,9 @@ footer img{
     }
     .popUpBackground{
         width: 25%;
-        height: auto;
+        height: fit-content;
         position: absolute;
-        top: 40%;
+        margin-top: auto;
         left: 75%;
         border-width: 2px;
         bottom: 0%;
