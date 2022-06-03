@@ -80,7 +80,7 @@ section h1{
 .telNumber{
     width: 146px;
     height: 22px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 700;
     position: relative;
     background-color: var(--btn-color);
@@ -106,7 +106,7 @@ section h1{
 }
 .welcome img{
     width: 100%;
-    height: max-content
+    height: max-content;
 }
 .h4Welcome{
     text-align: center;
@@ -408,6 +408,7 @@ footer img{
     .telNumber{
         width: 186px;
         height: 36px;
+        font-size: 15px;
     }
     .telNumber i{
         width: 30px;
