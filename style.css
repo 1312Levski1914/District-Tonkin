@@ -169,6 +169,7 @@ section h1{
 }
 .form-btn{
     width: 100px;
+    margin-bottom: 100px;
 }
 .middle-btn:hover{
     background-color: #7BA7D2;
@@ -399,9 +400,6 @@ footer img{
     }
     .littleText{
         font-size: 12px;
-    }
-    .littleText p{
-        
     }
     .orderSpan{
         font-size: 16px;
