@@ -46,7 +46,8 @@ let xMark = document.getElementsByClassName('xMark');
 function lessThen8(){
     divContainer.removeChild(btnContainer);
     noAnswer.innerHTML = `Drop by and we will <br> find a table for you!
-                            <img onclick= 'popUp()' class='xMark' src="./img/xmark-solid.svg" alt="xmark-missing" width ='30px'>`;
+                            <img onclick= 'popUp()' class='xMark' src="./img/xmark-solid.svg" alt="xmark-missing" width ='30px'>
+                            <div class="stroke"></div>`;
     noAnswer.classList.add('headingBookATable');
     divContainer.appendChild(noAnswer)
     stop= true;
