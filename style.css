@@ -224,6 +224,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 15px;
     background-color: #3B3737;
     padding: 20px;
@@ -236,9 +237,10 @@ footer{
     color:var(--nav);
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     padding-bottom: 70px;
     z-index: 69;
+    width: 30%;
 }
 .copyright{
     position: absolute;
