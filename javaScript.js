@@ -3,7 +3,7 @@ let main = document.getElementById('main-menu');
 function dishContainers(heading,arr){
     let dishesContainer = document.createElement('div');
     dishesContainer.classList.add('dishesContainer')
-    dishesContainer.innerHTML = `<h1 class='underline'>${heading}</h1>`
+    dishesContainer.innerHTML = `<h1>${heading}</h1>`
     for(let i = 0 ; i< arr.length ; i++){
         let divContainer = document.createElement('div')
         divContainer.className = 'dishContainer';

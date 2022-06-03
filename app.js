@@ -1,6 +1,5 @@
 
 //This function will make navigation bar stay on top always ;
-window.onscroll = function(){myFunction()}; //on user scroll do function this will keep it on top everytime user scroll;
 window.onload = function(){myFunction()}// on load do function that will make navbar go on top in the begging;
 let navbar = document.getElementById('navbar'); 
 let sticky = navbar.offsetTop;
@@ -55,7 +54,7 @@ function popUp(){
 }
 function lessThen8(){
     divContainer.removeChild(btnContainer);
-    noAnswer.innerHTML = 'Drop by and we will <br> find a table for you';
+    noAnswer.innerHTML = 'Drop by and we will <br> find a table for you!';
     noAnswer.classList.add('headingBookATable');
     divContainer.appendChild(noAnswer)
     stop= true;
@@ -83,7 +82,8 @@ function moreThen8(){
                          </div>
                          <input type="textarea" placeholder = 'Comments' name="comment" id="comment">
                          <button class="middle-btn">Send</button>
-                     </form>` 
+                     </form>
+                     <div class="stroke"></div>` 
                      
     divContainer.appendChild(joker);
     divContainer.appendChild(form);
