@@ -81,7 +81,7 @@ function moreThen8(){
                          <input type="number" id="peopleCount" name="peopleCount" min="8" max="50" value="8">
                          </div>
                          <input type="textarea" placeholder = 'Comments' name="comment" id="comment">
-                         <button class="middle-btn">Send</button>
+                         <button class="middle-btn form-btn">Send</button>
                      </form>
                      <div class="stroke"></div>` 
                      
