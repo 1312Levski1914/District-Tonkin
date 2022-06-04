@@ -261,6 +261,11 @@ footer{
     z-index: 69;
     width: 30%;
 }
+.childFooter img{
+	opacity: 1;
+	width: 5%;
+	height: auto;
+}
 .copyright{
     position: absolute;
     bottom: 2%;
