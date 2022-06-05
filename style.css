@@ -267,6 +267,10 @@ footer{
 	height: auto;
 	margin-bottom: 220px;
 }
+.childFooter a {
+	text-decoration: none;
+	color: white;
+}
 .copyright{
     position: absolute;
     bottom: 2%;
