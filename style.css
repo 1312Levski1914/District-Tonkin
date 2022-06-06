@@ -261,6 +261,16 @@ footer{
     z-index: 69;
     width: 30%;
 }
+.childFooter img{
+	opacity: 1;
+	width: 5%;
+	height: auto;
+	margin-bottom: 220px;
+}
+.childFooter a {
+	text-decoration: none;
+	color: white;
+}
 .copyright{
     position: absolute;
     bottom: 2%;
@@ -412,6 +422,7 @@ footer img{
     margin: auto;
     line-height: 1.3;
     color: #3B3737;
+	font-family: var(--Poppings);
 
 }
 #section div{
