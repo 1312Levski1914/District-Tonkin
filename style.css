@@ -261,16 +261,14 @@ footer{
     z-index: 69;
     width: 30%;
 }
-.childFooter img{
-	opacity: 1;
-	width: 5%;
-	height: auto;
-	margin-bottom: 220px;
+.wolt{
+    width: 50px;
 }
 .childFooter a {
 	text-decoration: none;
 	color: white;
 }
+
 .copyright{
     position: absolute;
     bottom: 2%;
@@ -282,7 +280,7 @@ footer{
     margin: auto;
     color: var(--nav);
 }
-footer img{
+.ilustrationFour{
     position: absolute;
     width: 300px;
     bottom: 9%;
@@ -436,7 +434,7 @@ footer img{
 }
 #background{
     position: absolute;
-    width: 100%;
+    width: 95%;
     left: 3em;
     top: 30%;
 }
@@ -463,7 +461,7 @@ footer img{
     .nav-btn-menu{
         font-size: 22px;
         cursor: pointer;
-        font-family: var(--imBue);
+        
     }
     #section{
         width: 30%;
@@ -489,6 +487,7 @@ footer img{
     .nav-btn{
         font-size: 22px;
         cursor: pointer;
+        
     }
     header section{
         width: 600px;
@@ -643,6 +642,7 @@ footer img{
         text-align: start;
 
     }
+    
     .contact{
         font-size: 16px;
     }
@@ -653,7 +653,7 @@ footer img{
         font-size: 16px;
     }
 
-    footer img{
+    .ilustrationFour{
         position: absolute;
         width: 300px;
         bottom: 9%;
