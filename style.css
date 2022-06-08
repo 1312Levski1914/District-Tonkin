@@ -735,8 +735,9 @@ footer{
     transform: translate(-50%,-50%);
     color: #fff;
     z-index: 69;
-    width: 100%;
+    width: fit-content;
     font-size: 29px;
+    display: inline-block
 }
 .h3TagInLocation:hover{
     font-size: 40px;
