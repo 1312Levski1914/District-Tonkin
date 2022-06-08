@@ -259,3 +259,16 @@ document.getElementById('forthStore').onmouseleave = function(){
     pTag.style.fontSize = '8px';
     pTag.style.padding = '8px 10px'
 }
+function showSpan(){
+    let span = document.getElementById('spanForHide');
+    let btn = document.getElementById('btn-MoreLess');
+    if(span.style.display == 'none'){
+        btn.textContent = 'Less';
+        span.style.display = 'block';
+        btn.style.marginTop = '10px';
+    }else{
+        span.style.display = 'none';
+        btn.textContent = 'More';
+    }
+}
+

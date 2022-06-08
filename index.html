@@ -26,15 +26,15 @@
             <a href="index.html"><img  src="./img/logo-white.png" alt="header Logo Missing"></a>
             <div onclick="popUp()" class="nav-btn">Book a table</div>
         </nav>
-        <video  loop play id="myVideo" autoplay muted>
+        <video  loop id="myVideo" autoplay muted>
             <source src="./img/TonkinVideo.mp4" type="video/mp4">
         </video>
         <section>
             <h1>District Tonkin</h1>
-            <span class="littleText">
+            <div class="littleText">
                 <p class="est">EST.2015</p> <br>
                 <p>/Vietnamese Cuisine/</p>
-            </span>
+            </div>
             <h6 class="orderSpan">Order Take away</h6>
             <div class="telNumber">
                 <img src="img/phone-solid-white.png" alt="phone-missing">
@@ -49,12 +49,15 @@
         <p>We opened District Tonkin with one goal in mind: giving our guests a unique, delicious, and unforgettable
             experience. Our menu reflects centuries of family cooking, offering traditional and innovative dishes,
             skillfully cooked to perfection. Every single item we serve is carefully prepared to dazzle your senses, so
-            browse our site and come by for some authentic street food.
+            browse our site and come by for some authentic street food. <br> <br> 
+            <span id="spanForHide" style="display: none;">
             The best things often occur in the meeting of two worlds. In the unexpected combinations that create
             something new. The best of both worlds together to invent new tastes and new experiences. Forging new
             traditions and making them your own. In Hanoi, this is something we learned long ago, by combing the French
-            and Vietnamese kitchens to create the Banh Mì.
+            and Vietnamese kitchens to create the <br> Banh Mì.</span>
+            <button id="btn-MoreLess" onclick="showSpan()" class="middle-btn">More</button>
         </p>
+        
         <img id="ilustration2" src="./img/illustration-2.png" alt="ilustratiton 1">
     </div>
     <h4 class="h2TagDishes">Most popular dishes</h4>
@@ -147,15 +150,16 @@
         <div class="childFooter">
             <h3>Social media</h3>
             <div>
-                <a href="https://www.facebook.com/districttonkin/"></a>
+                <a href="https://www.facebook.com/districttonkin/"><img class="tripAdvisor" src="./img/facebook-brands.svg" alt="fb missing"></a>
                 <p>Facebook</p>
             </div>
             <div>
-                <a href="https://www.instagram.com/districttonkin/?hl=en"></a>
+                <a href="https://www.instagram.com/districttonkin/?hl=en"><img class="tripAdvisor" src="./img/instagram-brands(2).svg" alt="instagram missing"></a>
                 <p>Instagram</p>
             </div>
 			<div>
                 <a href="https://www.tripadvisor.com/Restaurant_Review-g189541-d7705278-Reviews-District_Tonkin-Copenhagen_Zealand.html"><img class="tripAdvisor" src="./img/Tripadvisor-Logo.png" alt=""></a>
+                <p>Tripadvisor</p>
             </div>
             
         </div>

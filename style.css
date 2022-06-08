@@ -327,6 +327,11 @@ footer{
     z-index: 69;
     width: 30%;
 }
+.childFooter div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 .wolt{
     width: 50px;
 }
@@ -337,8 +342,9 @@ footer{
 	text-decoration: none;
 	color: white;
 }
-.childFooter a:hover{
+.childFooter div p:hover{
     color: black;
+    cursor: pointer;
 }
 
 .copyright{
