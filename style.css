@@ -59,7 +59,7 @@ header section{
     left: 49%;
     margin-top: -50%;
     margin-left: -100px;
-    opacity: 0.9;
+    opacity: 0.6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -697,7 +697,7 @@ footer{
 }
 .container{
     width: 48%;
-
+    margin: auto;
 }
 #location div img{
     width: 100%;
