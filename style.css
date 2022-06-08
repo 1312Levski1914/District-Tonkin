@@ -330,9 +330,15 @@ footer{
 .wolt{
     width: 50px;
 }
+.tripAdvisor{
+    width: 30px;
+}
 .childFooter a {
 	text-decoration: none;
 	color: white;
+}
+.childFooter a:hover{
+    color: black;
 }
 
 .copyright{
@@ -481,13 +487,12 @@ footer{
     top: 35%;
 }
 #section p{
-    width: 70%;
+    width: 90%;
     text-align: center;
     margin: auto;
     line-height: 1.3;
     color: #3B3737;
 	font-family: var(--Poppings);
-
 }
 #section div{
     background-color: #7BA7D2;
