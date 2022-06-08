@@ -66,6 +66,7 @@ header section{
     text-transform: uppercase;
     text-align: center;
     z-index: 10;
+    cursor:default;
 }
 .opacitys{
     width: 100%;
