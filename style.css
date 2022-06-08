@@ -737,6 +737,7 @@ footer{
     color: #fff;
     z-index: 69;
     width: fit-content;
+    max-width: fit-content;
     font-size: 29px;
     display: inline-block
 }
