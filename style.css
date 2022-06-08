@@ -171,6 +171,11 @@ section h1{
     padding: 5px 10px ;
     text-decoration: none;
 }
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .form-btn{
     width: 100px;
     
@@ -187,10 +192,54 @@ section h1{
     height: auto;
     padding: 5px 10px ;
 }
+
 #location{
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
 }
+.container{
+    position: relative;
+}
+#location div img{
+    width: 100%;
+    position: relative;
+}
+.h3TagInLocation{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 69;
+    width: 100%;
+    font-size: 29px;
+}
+.paraForLocation{
+    margin:0 ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    box-shadow: 2px 2px 8px 3px #3B3737;
+    color: var(--nav);
+    width: 30%;
+    background-color: #7BA7D2;
+    z-index: 69;
+}
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: 20;
+    background-color: #000000;
+}
+/*
 #location h5{
     padding-bottom: 20px;
     cursor: pointer;
@@ -205,6 +254,7 @@ section h1{
     padding-bottom: 25px;
     padding-top: 80px ;
 }
+*/
 .womanWithBike{
     position: absolute;
     top: 0%;
@@ -213,6 +263,7 @@ section h1{
     z-index: -69;
     opacity: 0.4;
 }
+/*
 .locationInfo{
     display: flex;
     flex-direction: column;
@@ -233,11 +284,12 @@ section h1{
     padding: 20px;
     font-family: var(--Poppings);
 }
+
 .googleMaps{
     width: 95%;
     margin: auto;
 }
-
+*/
 footer{
     margin-top: 100px;
     display: flex;
@@ -601,6 +653,7 @@ footer{
         padding: 0;
         
     }
+    /*
     #location h3{
         font-size: 40px;
     }
@@ -633,6 +686,64 @@ footer{
         margin: auto;
         padding-left: 5%;
     }
+    */
+    
+#location{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    gap:4px;
+}
+.container{
+    width: 48%;
+
+}
+#location div img{
+    width: 100%;
+    position: relative;
+}
+.h3TagInLocation{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 69;
+    width: 100%;
+    font-size: 29px;
+}
+.h3TagInLocation:hover{
+    font-size: 40px;
+}
+.paraForLocation{
+    margin:0 ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    box-shadow: 2px 2px 8px 3px #3B3737;
+    color: var(--nav);
+    width: 30%;
+    background-color: #7BA7D2;
+    z-index: 69;
+}
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: 20;
+    background-color: #000000;
+    
+}
+.opacity:hover{
+    background-color: #7BA7D2;
+    opacity: 0.5;
+}
+
     footer{
         display: flex;
         flex-direction: row;

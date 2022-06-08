@@ -146,4 +146,116 @@ function showLocation4(){
         forthLocation.style.display = 'none';
     }
 }
+function firstStore(){
+    window.location.href = 'https://www.google.com/maps/place/Store+Kongensgade+71,+1264+K%C3%B8benhavn,+Denmark/@55.6850459,12.5859257,17z/data=!3m1!4b1!4m5!3m4!1s0x46525318c797fc87:0x5189f60066410922!8m2!3d55.6850459!4d12.5881144';
+}
+function secondStore(){
+    window.location.href = 'https://www.google.com/maps/place/District+Tonkin/@55.6726838,12.5514989,17z/data=!3m1!4b1!4m5!3m4!1s0x46525311fa11d091:0xb1c5d0d027d9746f!8m2!3d55.6726838!4d12.5536876';
+}
+function thirthStore(){
+    window.location.href = 'https://www.google.com/maps/place/District+Tonkin/@55.6777937,12.5690202,17z/data=!3m1!4b1!4m5!3m4!1s0x4652539bc2c4f099:0x5e583d6f6f10851f!8m2!3d55.6777938!4d12.5732474';
+}
+function forthStore(){
+    window.location.href = 'https://www.google.com/maps/place/Broens+Gadek%C3%B8kken/@55.678852,12.557974,14z/data=!4m9!1m2!2m1!1sbroends+gadek%C3%B8kken+district+tonkin!3m5!1s0x4652533b6a9d44b1:0xb40874eaa65fb002!8m2!3d55.6778622!4d12.5972483!15sCiNicm9lbmRzIGdhZGVrw7hra2VuIGRpc3RyaWN0IHRvbmtpbiIDiAEBWiUiI2Jyb2VuZHMgZ2FkZWvDuGtrZW4gZGlzdHJpY3QgdG9ua2lukgEKZm9vZF9jb3VydA';
+}
 
+document.getElementById('firstStore').onmouseover = function(){
+    
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '40px';
+    h3.style.transition = '0.5s';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = 0.4;
+    let pTag = this.querySelector('p');
+    pTag.style.width = '30%';
+    pTag.style.fontSize = '12px';
+    pTag.style.padding = '5px 10px';
+    pTag.style.transition = '0.5s';
+}
+document.getElementById('firstStore').onmouseleave = function(){
+    this.style.backgroundColor = 'white';
+    this.style.opacity = '1';
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '29px';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = '0';
+    let pTag = this.querySelector('p');
+    pTag.style.width = '80px';
+    pTag.style.fontSize = '8px';
+    pTag.style.padding = '8px 10px'
+}
+document.getElementById('secStore').onmouseover = function(){
+    
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '40px';
+    h3.style.transition = '0.5s';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = 0.4;
+    let pTag = this.querySelector('p');
+    pTag.style.width = '30%';
+    pTag.style.fontSize = '12px';
+    pTag.style.padding = '5px 10px';
+    pTag.style.transition = '0.5s';
+}
+document.getElementById('secStore').onmouseleave = function(){
+    this.style.backgroundColor = 'white';
+    this.style.opacity = '1';
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '29px';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = '0';
+    let pTag = this.querySelector('p');
+    pTag.style.width = '80px';
+    pTag.style.fontSize = '8px';
+    pTag.style.padding = '8px 10px'
+}
+document.getElementById('tirthStore').onmouseover = function(){
+    
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '40px';
+    h3.style.transition = '0.5s';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = 0.4;
+    let pTag = this.querySelector('p');
+    pTag.style.width = '30%';
+    pTag.style.fontSize = '12px';
+    pTag.style.padding = '5px 10px';
+    pTag.style.transition = '0.5s';
+}
+document.getElementById('tirthStore').onmouseleave = function(){
+    this.style.backgroundColor = 'white';
+    this.style.opacity = '1';
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '29px';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = '0';
+    let pTag = this.querySelector('p');
+    pTag.style.width = '80px';
+    pTag.style.fontSize = '8px';
+    pTag.style.padding = '8px 10px'
+}
+document.getElementById('forthStore').onmouseover = function(){
+    
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '40px';
+    h3.style.transition = '0.5s';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = 0.4;
+    let pTag = this.querySelector('p');
+    pTag.style.width = '30%';
+    pTag.style.fontSize = '12px';
+    pTag.style.padding = '5px 10px';
+    pTag.style.transition = '0.5s';
+}
+document.getElementById('forthStore').onmouseleave = function(){
+    this.style.backgroundColor = 'white';
+    this.style.opacity = '1';
+    let h3 = this.querySelector('h3');
+    h3.style.fontSize = '29px';
+    let opacity = this.querySelector('div');
+    opacity.style.opacity = '0';
+    let pTag = this.querySelector('p');
+    pTag.style.width = '80px';
+    pTag.style.fontSize = '8px';
+    pTag.style.padding = '8px 10px'
+}
